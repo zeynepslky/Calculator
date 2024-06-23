@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/girdi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sonuc"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="#FFC5C5C5"
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="0"
+        android:textAlignment="textEnd"
+        android:textColor="#FFC5C5C5"
+        android:textSize="64dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sil"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text="C"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/ac"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text="("
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/kapa"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text=")"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/bolme"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text="/"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yedi"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/sekiz"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/dokuz"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/carpma"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text="x"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dort"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/bes"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/alti"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/cikarma"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bir"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/iki"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/uc"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+
+            <Button
+                android:id="@+id/toplama"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                app:cornerRadius="150dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/fullsil"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:textColor="@color/black"
+                app:cornerRadius="150dip"
+                android:textSize="32dp"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/sifir"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#474747"
+                android:textColor="@color/black"
+                app:cornerRadius="150dip"
+                android:textSize="32dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/nokta"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:textColor="@color/black"
+                app:cornerRadius="150dip"
+                android:textSize="32dp"
+                android:text="." />
+
+            <Button
+                android:id="@+id/hesapla"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_weight="1"
+                android:backgroundTint="#808080"
+                android:textColor="@color/black"
+                app:cornerRadius="150dip"
+                android:textSize="32dp"
+                android:text="=" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
